@@ -1,0 +1,21 @@
+In this project I used openjdk 16.0.1 2021-04-20 and javac 16.0.1
+
+Usage:
+Inside the directory that contains the package: 
+compile all by javac img_hole_fill\*.java.
+
+Run the following command depending on the operating system your working on:
+Mac: java img_file_name\Main <ImgFileName> <MaskFileName> <8 or 4 connectivity>
+Windows: java img_file_name\Main.java <ImgFileName> <MaskFileName> <8 or 4 connectivity>
+Linux: java img_file_name.Main <ImgFileName> <MaskFileName> <8 or 4 connectivity>
+
+The default is 4-connectivity, however you may provide a third argument requesting 8-connectivity.
+A third argument will count as 8-connectivity regardless of its content.
+
+Both images must be in the current working directory and of the following formats: GIF, PNG, JPEG, BMP or WBMP.
+
+The two images should be of the same dimensions, otherwise an ArrayIndexOutOfBoundsException may occur.
+
+For further results, uncomment the commented lines in the main method.
+
+Note: there is a JavaDocs directory from which you can easily view the API of the library.
