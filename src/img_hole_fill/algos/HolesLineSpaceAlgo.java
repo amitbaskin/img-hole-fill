@@ -39,8 +39,9 @@ public class HolesLineSpaceAlgo extends LineSpace implements FillHoleAlgo{
         initLineSpace(holeSet);
         HashSet<IntPair> holeReps = new HashSet<>(repsLst);
         GeneralUtils.applySetsDiff(holeSet, holeReps);
-        BaseAlgo.getInstance().apply(grayMat, holeReps, boundarySet, func, isEightConnected);
-        BaseAlgo.getInstance().apply(grayMat, holeSet, holeReps, func, isEightConnected);
+        BaseAlgo baseAlgo = BaseAlgo.getInstance();
+        baseAlgo.apply(grayMat, holeReps, boundarySet, func, isEightConnected);
+        baseAlgo.apply(grayMat, holeSet, holeReps, func, isEightConnected);
     }
 
     /**

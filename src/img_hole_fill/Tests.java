@@ -197,9 +197,5 @@ public abstract class Tests {
                         isEightConnected, algo);
             }
         }
-
-//        Tests.fillByHoledMatTest(imgFileName, holeFileName, true, new ApproxAlgo(true, true, true));
-//        Runner.fillByHoleFile(imgFileName, holeFileName, DefaultWeight.getInstance(),
-//                true, new ApproxAlgo(true, true, true));
     }
 }
